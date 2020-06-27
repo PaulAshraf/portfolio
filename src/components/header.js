@@ -2,41 +2,46 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
-  </header>
-)
+import { Navbar, Nav } from "react-bootstrap"
 
-Header.propTypes = {
-  siteTitle: PropTypes.string,
+const Header = ({selected}) => {
+  return (
+    <header >
+      <Navbar expand="lg" >
+        <Navbar.Brand>
+            {selected === 0?
+            <Link to='/' className='nav-bar selected'>Paul Ashraf</Link>
+            :
+            <Link to='/' className='nav-bar'>Paul Ashraf</Link>
+            }
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav" >
+          <Nav>
+            {selected === 1?
+            <Nav.Link><Link to='/experience' className='nav-bar selected'>Experience</Link></Nav.Link>
+            :
+            <Nav.Link><Link to='/experience' className='nav-bar'>Experience</Link></Nav.Link>
+            }
+            {selected === 2?
+            <Nav.Link><Link to='/projects' className='nav-bar selected'>Projects</Link></Nav.Link>
+            :
+            <Nav.Link><Link to='/projects' className='nav-bar'>Projects</Link></Nav.Link>
+            }
+          </Nav>
+        </Navbar.Collapse>
+      </Navbar>
+    </header>
+  )
 }
 
 Header.defaultProps = {
-  siteTitle: ``,
+  selected: 0
 }
+
+Header.propTypes = {
+  selected: PropTypes.number,
+}
+
 
 export default Header
