@@ -1,6 +1,6 @@
 import React, { useRef } from "react"
 import styled from 'styled-components'
-import { Container, Row, Col, Button } from 'react-bootstrap'
+import { Container, Row, Button } from 'react-bootstrap'
 import { FaCode, FaMicrochip } from 'react-icons/fa'
 import { FiDatabase } from 'react-icons/fi'
 import { BsThreeDots } from 'react-icons/bs'
@@ -9,6 +9,9 @@ import { RiGamepadLine } from 'react-icons/ri'
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import ProjCard from '../components/ProjCard'
+
+import Imdb from '../components/imageComponents/imdb'
 
 const scrollTo = (ref) => () => window.scrollTo({
   top: ref.current.offsetTop - 25,
@@ -43,6 +46,14 @@ const Projects = () => {
 
     <Heading ref={webRef}>Web Developement</Heading>
 
+    <ProjCard data={{
+      name: 'IMDB\'s Top 250 Planner',
+      desc: 'Computer Science Engineering BSc Computer Sciencc Computer Science Engineering BScComputer Science Engineering BScComputer Science Engineering BSc',
+      date: '2020',
+      type: 'Personal',
+    }}>
+      <Imdb />
+    </ProjCard>
 
     <Heading ref={dataRef}>Data Engineering</Heading>
 

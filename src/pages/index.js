@@ -18,7 +18,7 @@ const transition = (delay) => ({
   type: "spring",
   stiffness: 260,
   damping: 18,
-  delay: delay + 2
+  delay: delay + 1.7
 })
 
 const IndexPage = () => (

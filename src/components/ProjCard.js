@@ -14,22 +14,10 @@ const ProjCard = ({children, data}) => {
                 </ImageCont>
                 <Col>
                 <Row>
-                    <Title>{data.sub + ' '}<BsDot />{' ' + data.title}</Title>
-                    <Sub>{data.date + ' '}<BsDot />{' ' + (data.location||'Cairo, Egypt')}</Sub>
-                    <Sub>{data.tech.map((element, i) => {
-                        if(i !== data.tech.length - 1){
-                            return(<>{element  + ' '}<BsDot /></>)}
-                        else{
-                            return(element)}
-                    })}</Sub>
+                    <Title>{data.name}</Title>
+                    <Sub>{data.date + ' '}<BsDot />{' ' + data.type + ' Project'}</Sub>
+                    <Sub>{data.desc}</Sub>
                 </Row>
-                </Col>
-            </Row>
-            <Row  >
-                <Col>
-                <List>
-                    {data.list.map((li) => {return(<li>{li}</li>)})}
-                </List>
                 </Col>
             </Row>
         </Container>
@@ -39,7 +27,7 @@ const ProjCard = ({children, data}) => {
 }
 
 const ImageCont = styled.div`
-  width: 10em;
+  width: 40%;
 `
 
 const Data = styled.div`
@@ -64,10 +52,6 @@ const Sub = styled(Data)`
     font-size: 1.2em;
   };
 
-`
-const List = styled.ul`
-  font-family: 'Arima Madurai';
-  padding: 0.5em;
 `
 
 export default ProjCard
