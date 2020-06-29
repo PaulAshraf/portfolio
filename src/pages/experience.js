@@ -2,8 +2,11 @@ import React from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Image from '../components/image'
 import Card from '../components/Card'
+
+import Porto from '../components/imageComponents/porto'
+import Guc from '../components/imageComponents/guc'
+import Robone from '../components/imageComponents/robone'
 
 const Experience = () => (
   <Layout selected={1} >
@@ -26,7 +29,7 @@ const Experience = () => (
         'Worked with Dr. Sergio Santos to publish our results',
       ],
     }}>
-      <Image />
+      <Porto />
     </Card>
 
     <Card data={{
@@ -43,7 +46,7 @@ const Experience = () => (
         'Got experienced with using keras and darknet with TensorFlow deep learning libraries (Python)',
       ],
     }}>
-      <Image />
+      <Guc />
     </Card>
 
     <Card data={{
@@ -60,7 +63,7 @@ const Experience = () => (
         'Got familiar with web development using Ruby on Rails and Angular.js',
       ],
     }}>
-      <Image />
+      <Robone />
     </Card>
 
     <Card data={{
@@ -73,7 +76,7 @@ const Experience = () => (
         'Helped in CSEN202 and CSEN102 classes',
       ],
     }}>
-      <Image />
+      <Guc />
     </Card>
   </Layout>
 )

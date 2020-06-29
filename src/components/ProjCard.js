@@ -4,7 +4,7 @@ import { Row, Col, Container } from 'react-bootstrap'
 import { BsDot } from 'react-icons/bs'
 
 
-const Card = ({children, data}) => {
+const ProjCard = ({children, data}) => {
     return (
         <>
         <Container fluid>
@@ -70,4 +70,4 @@ const List = styled.ul`
   padding: 0.5em;
 `
 
-export default Card
+export default ProjCard

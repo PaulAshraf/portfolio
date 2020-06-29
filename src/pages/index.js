@@ -18,7 +18,7 @@ const transition = (delay) => ({
   type: "spring",
   stiffness: 260,
   damping: 18,
-  delay: delay
+  delay: delay + 2
 })
 
 const IndexPage = () => (
@@ -133,7 +133,7 @@ const SubTitleBold = styled(SubTitle)`
   font-weight: bold;
 `
 const ButtonStyle = styled.div`
-  width: 40%;
+  width: 45%;
   margin: 1em;
   text-decoration: none;
   border: 2px solid white;

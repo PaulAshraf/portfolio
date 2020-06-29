@@ -28,6 +28,11 @@ const Header = ({selected}) => {
             :
             <Nav.Link><Link to='/projects' className='nav-bar'>Projects</Link></Nav.Link>
             }
+            {selected === 3?
+            <Nav.Link><Link to='/education' className='nav-bar selected'>Education</Link></Nav.Link>
+            :
+            <Nav.Link><Link to='/education' className='nav-bar'>Education</Link></Nav.Link>
+            }
           </Nav>
         </Navbar.Collapse>
       </Navbar>
