@@ -17,7 +17,7 @@ const Layout = ({ children, selected }) => {
   return (
     <>
       <Header selected={selected} />
-      <main>{children}</main>
+      <main style={{padding: '2em'}}>{children}</main>
       <footer>
         2020 © Paul Ashraf
       </footer>

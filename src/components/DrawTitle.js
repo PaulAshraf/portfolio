@@ -30,8 +30,8 @@ const DrawTitle = () => {
         initial="hidden"
         animate="visible"
         transition={{
-          default: { duration: 10, ease: "easeInOut" },
-          fill: { duration: 10, ease: [1, 0, 0.8, 1] }
+          default: { duration: 5, ease: "easeInOut" },
+          fill: { duration: 5, ease: [1, 0, 0.8, 1] }
         }}
       />
     </motion.svg>
