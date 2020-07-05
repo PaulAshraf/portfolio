@@ -8,7 +8,7 @@ import HomeButton from './HomeButton'
 const colaboratePanel = () => {
     return (
         <Panel>
-            <Container fluid>
+            <Container>
                 <Row>
                     <Col lg>
                         <Row><Title>Let's Colaborate!</Title></Row>
