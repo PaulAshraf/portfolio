@@ -1,17 +1,17 @@
-@import 'https://fonts.googleapis.com/css?family=Homemade+Apple|Open+Sans|Pacifico|Coustard|Abel|Fredoka+One|Arima+Madurai';
+@import 'https://fonts.googleapis.com/css?family=Homemade+Apple|Open+Sans|Pacifico|Coustard|Abel|Fredoka+One|Arima+Madurai|Raleway';
 
 body {
   /* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); */
   /* background: linear-gradient(-45deg, #202040, #202060, #602080, #b030b0); */
   /* background: linear-gradient(-45deg, #352f44, #2a2438, #411e8f, #310a5d); */
-	background: linear-gradient(-45deg, #1d3e53, #254b62, #476d7c, #77abb7);
+  /* background: linear-gradient(-45deg, #1d3e53, #254b62, #476d7c, #77abb7); */
   
+  background-color: #eeeeee;
   
-  
-	background-size: 2000% 2000%;
-  animation: gradient 15s ease infinite;  
+	background-size: 100% 100%;
+  /* animation: gradient 15s ease infinite;   */
 
-  color: white;
+  color: #222831;
   
   /* footer */
   min-height: calc(100vh - 70px);
@@ -20,7 +20,8 @@ body {
 footer {
   height: 50px;
   text-align: center;
-  font-family: 'Arima Madurai';
+  font-family: 'Raleway';
+  
 }
 
 @keyframes gradient {
@@ -40,12 +41,12 @@ footer {
 }
 
 .nav-bar, .nav-bar:hover, .nav-bar:visited{
-  color: #ffffff;
+  color: #222831;
   text-decoration: none;
   background-color: rgba(0, 0, 0, 0);
 
   text-align: center;
-  font-family: 'Arima Madurai';
+  font-family: 'Raleway';
 }
 
 .selected{
@@ -61,7 +62,7 @@ footer {
   right: 0;
   bottom: -5px;
   height: 0;
-  border: 2px solid white;
+  border: 2px solid #222831;
   border-radius : 2px;
 }
 
@@ -70,14 +71,14 @@ footer {
 .container {
   display: flex;
   place-content: center;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .item {
   width: 100%;
   overflow: visible;
-  stroke: #fff;
-  stroke-width: 2;
+  stroke: #222831;
+  stroke-width: 4;
   stroke-linejoin: round;
   stroke-linecap: round;
 }

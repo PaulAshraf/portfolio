@@ -45,7 +45,7 @@ const ImageCont = styled.div`
 const Data = styled.div`
   width: 100%;
   text-align: left;
-  font-family: 'Arima Madurai';
+  font-family: 'Raleway';
 `
 
 const Title =  styled(Data)`
@@ -66,7 +66,7 @@ const Sub = styled(Data)`
 
 `
 const List = styled.ul`
-  font-family: 'Arima Madurai';
+  font-family: 'Raleway';
   padding: 0.5em;
 `
 
