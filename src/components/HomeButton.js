@@ -76,9 +76,9 @@ const HomeButton = ({data}) => {
                   animate={animate}
                   transition={transition(data.delay)}
             >
-                <Row className='justify-content-center'><ButtonStyleInvert><Button variant='link'><Link className='nav-bar' to={data.to} >
+                <Row className='justify-content-center'><ButtonStyleInvert><Button variant='link'><a className='nav-bar' href={data.to} target="_blank"  rel="noreferrer">
                     <SubTitleBoldInvert>{resolveIcon(data.text)}{' ' + data.text}</SubTitleBoldInvert>
-                </Link></Button></ButtonStyleInvert></Row>
+                </a></Button></ButtonStyleInvert></Row>
             </ motion.div>
         )
     }

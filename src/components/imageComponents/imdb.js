@@ -18,7 +18,7 @@ const Imdb = () => {
     query {
       placeholderImage: file(relativePath: { eq: "imdb-min.PNG" }) {
         childImageSharp {
-          fluid(maxWidth: 300) {
+          fluid {
             ...GatsbyImageSharpFluid
           }
         }

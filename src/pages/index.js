@@ -66,26 +66,6 @@ const IndexPage = () => (
 
         <ColaboratePanel />
 
-        {/* <Container fluid>
-
-        <Row>
-          <Col lg>
-            <HomeButton data={{
-              delay: 0.1,
-              to: '/experience',
-              text: 'Experience',
-            }}/>
-          </Col>
-          <Col lg>
-          <HomeButton data={{
-              delay: 0.3,
-              to: '/education',
-              text: 'Education',
-            }}/>
-          </Col>
-        </Row>
-      </Container> */}
-
   </Layout>
 )
 

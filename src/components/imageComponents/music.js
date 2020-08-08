@@ -13,12 +13,12 @@ import Img from "gatsby-image"
  * - `useStaticQuery`: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-const Java = () => {
+const Music = () => {
   const data = useStaticQuery(graphql`
     query {
-      placeholderImage: file(relativePath: { eq: "java.png" }) {
+      placeholderImage: file(relativePath: { eq: "music.png" }) {
         childImageSharp {
-          fluid(maxWidth: 300, grayscale: true) {
+          fluid(maxWidth: 500) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -30,4 +30,4 @@ const Java = () => {
 }
 
 
-export default Java
+export default Music

@@ -13,12 +13,12 @@ import Img from "gatsby-image"
  * - `useStaticQuery`: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-const Csharp = () => {
+const Grid = () => {
   const data = useStaticQuery(graphql`
     query {
-      placeholderImage: file(relativePath: { eq: "csharp.png" }) {
+      placeholderImage: file(relativePath: { eq: "grid.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 300, grayscale: true) {
+          fluid {
             ...GatsbyImageSharpFluid
           }
         }
@@ -30,4 +30,4 @@ const Csharp = () => {
 }
 
 
-export default Csharp
+export default Grid

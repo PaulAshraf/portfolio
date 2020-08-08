@@ -13,12 +13,12 @@ import Img from "gatsby-image"
  * - `useStaticQuery`: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-const SC = () => {
+const Game = () => {
   const data = useStaticQuery(graphql`
     query {
-      placeholderImage: file(relativePath: { eq: "styled.png" }) {
+      placeholderImage: file(relativePath: { eq: "game.png" }) {
         childImageSharp {
-          fluid(maxWidth: 300, grayscale: true) {
+          fluid(maxWidth: 300) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -30,4 +30,4 @@ const SC = () => {
 }
 
 
-export default SC
+export default Game

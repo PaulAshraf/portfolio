@@ -13,12 +13,12 @@ import Img from "gatsby-image"
  * - `useStaticQuery`: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-const Arduino = () => {
+const Onion = () => {
   const data = useStaticQuery(graphql`
     query {
-      placeholderImage: file(relativePath: { eq: "arduino.png" }) {
+      placeholderImage: file(relativePath: { eq: "onion-min.PNG" }) {
         childImageSharp {
-          fluid(maxWidth: 300, grayscale: true) {
+          fluid {
             ...GatsbyImageSharpFluid
           }
         }
@@ -30,4 +30,4 @@ const Arduino = () => {
 }
 
 
-export default Arduino
+export default Onion

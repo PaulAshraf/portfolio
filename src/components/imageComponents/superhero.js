@@ -13,12 +13,12 @@ import Img from "gatsby-image"
  * - `useStaticQuery`: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-const Jest = () => {
+const Superhero = () => {
   const data = useStaticQuery(graphql`
     query {
-      placeholderImage: file(relativePath: { eq: "jest.png" }) {
+      placeholderImage: file(relativePath: { eq: "superhero.PNG" }) {
         childImageSharp {
-          fluid(maxWidth: 300, grayscale: true) {
+          fluid(maxWidth: 300) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -30,4 +30,4 @@ const Jest = () => {
 }
 
 
-export default Jest
+export default Superhero
