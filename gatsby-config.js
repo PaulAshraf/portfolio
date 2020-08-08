@@ -4,12 +4,6 @@ module.exports = {
     image: 'src/images/logo.png',
     description: `Paul Ashraf's Porfolio`,
     author: `@PaulAshraf`,
-
-    "og:url": "https://www.paulashraf.com",
-    "og:type": "website",
-    "og:title": "Paul",
-    "og:description": "Paul Ashraf's Porfolio",
-    "og:image": "src/images/logo.png",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
