@@ -13,6 +13,8 @@ import Gafi from '../components/imageComponents/gafi'
 import Game from '../components/imageComponents/game'
 import Superhero from '../components/imageComponents/superhero'
 import Grid from '../components/imageComponents/grid'
+import Eeg from '../components/imageComponents/eeg'
+import Lines from '../components/imageComponents/lines'
 
 const Projects = () => {
 
@@ -93,7 +95,7 @@ const Projects = () => {
     <ProjCard data={{
       name: 'Superhero Chess',
       desc: 'A large scale Chess spinoff game with Superpowers to some peices and a Disney theme. Built with Java.',
-      date: '2020',
+      date: '2018',
       type: 'University',
       github: 'https://github.com/PaulAshraf/superhero-chess',
     }}>
@@ -109,13 +111,13 @@ const Projects = () => {
 
     <ProjCard data={{
       name: 'EEG Emregncy Braking Detection',
-      desc: 'This is a collaboration with INESC at the University of Porto, Portgual. It is a smart grid simulation with three prosumers each having access to solar energy, wind energy, EV cars and more. The grid is represented as Mixed Integer Optimisation problem and solved using GAMS and Python. This work was published in EEEIC 2020, an IEEE conference, and we are working now on expanding it to be published in an IEEE journal.',
-      date: '2019-2020',
-      type: 'Research',
-      github: 'https://github.com/PaulAshraf/smart-grids',
-      paper: 'https://ieeexplore.ieee.org/document/9160657',
+      desc: 'This is my Bachelor Project. It constructs Machine Learning and Deep Learning models to detect Emrgency Braking events while driving using EEG signals captured using an EMOTIV EEG headset. We also constructed an experiement uing AirSim to collect EEG data.',
+      date: '2020',
+      type: 'Bachelor',
+      github: 'https://github.com/PaulAshraf/eeg-braking-detection',
+      paper: 'https://drive.google.com/file/d/1QORY3D_uYwEXqpIx_2aunr8wqmV2UGpk/view?usp=sharing',
     }}>
-      <Grid />
+      <Eeg />
     </ProjCard>
 
     <ProjCard data={{
@@ -127,6 +129,16 @@ const Projects = () => {
       paper: 'https://ieeexplore.ieee.org/document/9160657',
     }}>
       <Grid />
+    </ProjCard>
+
+    <ProjCard data={{
+      name: 'Lane Lines Detection',
+      desc: 'A project I did in my internship in the Self Driving Cars lab in the GUC. It is a computer vision program that detects lane lines from dash cam video, written in Python and OpenCV.',
+      date: '2019',
+      type: 'Research',
+      github: 'https://github.com/PaulAshraf/automatic-lane-lines-detection',
+    }}>
+      <Lines />
     </ProjCard>
 
   </Layout>

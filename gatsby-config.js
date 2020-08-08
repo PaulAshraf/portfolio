@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Paul`,
+    image: 'src/images/logo.png',
     description: `Paul Ashraf's Porfolio`,
     author: `@PaulAshraf`,
   },
@@ -18,13 +19,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`, // for mobile icon
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Paul Ashraf's Porfolio`,
+        short_name: `Paul Ashraf`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/logo.png`, // This path is relative to the root of the site.
       },
     },
     {

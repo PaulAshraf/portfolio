@@ -32,7 +32,10 @@ const list = [
     'node',
     'styled',
     'tf',
-    'haskell'
+    'haskell',
+    'next',
+    'heroku',
+    'netlify',
 ]
 
 const ScrollingTech = () => {

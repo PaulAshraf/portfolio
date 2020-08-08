@@ -40,7 +40,7 @@ const ProjCard = ({children, data}) => {
                   <ButtonCont><ProjButton data={{
                     link: false,
                     card: true,
-                    text: 'Published Paper',
+                    text: 'Paper',
                     type: 'PDF',
                     href: data.paper
                   }} /></ButtonCont>
@@ -77,7 +77,7 @@ const Wrapper = styled.div`
 
 const ButtonCont = styled.div`
   margin: 0.3em;
-  width: 45%;
+  width: 47%;
 `
 
 // const ImageCont = styled.div`

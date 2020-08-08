@@ -69,7 +69,7 @@ const ProjButton = ({data}) => {
     }
     if(data.card){
         return(
-            <Row className='justify-content-center'><ButtonStyle><Button variant='link'><a className='nav-bar' href={data.href}>
+            <Row className='justify-content-center'><ButtonStyle><Button variant='link'><a className='nav-bar' href={data.href} target="_blank"  rel="noreferrer">
                 <SubTitleBold>{resolveIcon(data.type)}{' ' + data.text}</SubTitleBold>
             </a></Button></ButtonStyle></Row>
         )
