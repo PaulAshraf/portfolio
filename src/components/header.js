@@ -18,15 +18,15 @@ const Header = ({selected}) => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav" >
           <Nav>
-            {selected === 1?
-            <Nav.Link><Link to='/experience' className='nav-bar selected'>Experience</Link></Nav.Link>
-            :
-            <Nav.Link><Link to='/experience' className='nav-bar'>Experience</Link></Nav.Link>
-            }
             {selected === 2?
             <Nav.Link><Link to='/projects' className='nav-bar selected'>Projects</Link></Nav.Link>
             :
             <Nav.Link><Link to='/projects' className='nav-bar'>Projects</Link></Nav.Link>
+            }
+            {selected === 1?
+            <Nav.Link><Link to='/experience' className='nav-bar selected'>Experience</Link></Nav.Link>
+            :
+            <Nav.Link><Link to='/experience' className='nav-bar'>Experience</Link></Nav.Link>
             }
             {selected === 3?
             <Nav.Link><Link to='/education' className='nav-bar selected'>Education</Link></Nav.Link>

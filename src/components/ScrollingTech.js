@@ -66,6 +66,7 @@ const ScrollingTech = () => {
                 return(
                     <ImageCont key={edge.node.id}>
                         <Img 
+                            loading='eager'
                             fluid={edge.node.fluid} 
                             imgStyle={{ objectFit: 'contain', objectPosition: 'middle' }} 
                             style={{height: '100px', verticalAlign: 'middle' }}
