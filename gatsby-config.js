@@ -4,6 +4,7 @@ module.exports = {
     image: 'src/images/logo.png',
     description: `Paul Ashraf's Porfolio`,
     author: `@PaulAshraf`,
+    url: 'https://www.paulashraf.com'
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

@@ -36,6 +36,7 @@ const list = [
     'next',
     'heroku',
     'netlify',
+    'gatsby',
 ]
 
 const ScrollingTech = () => {
