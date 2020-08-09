@@ -93,10 +93,15 @@ const SubTitle = styled.span`
 
   text-align: center;
   font-family: 'Raleway';
+
+  margin-left: 0.1em;
+  margin-right: 0.1em;
 `
 
 const SubTitleBold = styled(SubTitle)`
   font-weight: bold;
+
+  margin: 0;
 
 `
 

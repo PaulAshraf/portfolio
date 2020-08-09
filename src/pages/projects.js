@@ -26,14 +26,15 @@ const Projects = () => {
     <Panel>
     <Heading >Web Applications</Heading>
     <SubHeading>
-        Frontend development experience using React in bulding static websites (Gatsby), client-side rendered websites (Create React App) and server-side rendered websites (Next). Also, light experience in using Angular and the .NET stack.
-        Backend developement experience using Node, with slight experience in Python and Go.
+        Frontend development experience using React in bulding static websites (Gatsby), client-side rendered websites (Create React App) and server-side rendered websites (Next). In addition to State management using Redux (+ Redux Tookit) and Redux Saga, and testing with Jest. 
+        Also, light experience in using Angular and the .NET stack.
+        Backend developement experience using Node, with slight experience in Python (as a Backend server), Ruby on Rails and Go.
     </SubHeading>
     </Panel>
 
     <ProjCard data={{
       name: 'Spotify to Youtube Converter',
-      desc: 'A Node server to get the Youtube URL of a Spotify track. I\'m also currently developing a Chrome extension to automatically redirect spoidy links into their equivelant Youtube video. ',
+      desc: 'A Node server to get the Youtube URL of a Spotify track. I\'m also currently developing a Chrome extension to automatically redirect Spotify links into their equivelant Youtube video. ',
       date: '2020',
       type: 'Personal',
       github: 'https://github.com/PaulAshraf/music-converter-backend',
@@ -133,7 +134,7 @@ const Projects = () => {
 
     <ProjCard data={{
       name: 'Lane Lines Detection',
-      desc: 'A project I did in my internship in the Self Driving Cars lab in the GUC. It is a computer vision program that detects lane lines from dash cam video, written in Python and OpenCV.',
+      desc: 'A project I did in my internship in the Self Driving Cars lab in the GUC. It is a computer vision program that detects lane lines from a dash cam video, written in Python and OpenCV.',
       date: '2019',
       type: 'Research',
       github: 'https://github.com/PaulAshraf/automatic-lane-lines-detection',

@@ -4,43 +4,48 @@ import Img from "gatsby-image"
 import styled, { keyframes } from 'styled-components'
 
 const list = [
+    'react',
+    'js',
+    'python',
+    'tf',
     'android',
+    'mongo',
+    'mssqlserver',
+    'cra',
+    'gatsby',
+    'redux',
     'html',
-    'opencv',
+    'css',
+    'node',
     'arduino',
+    'reduxsaga',
     'opengl',
-    'c',
-    'intel',
     'c++',
     'java',
-    'cra',
     'jest',
     'postgres',
-    'csharp',
-    'js',
-    'prolog',
-    'css',
-    'keras',
-    'python',
-    'excel',
-    'matlab',
-    'react',
-    'express',
-    'mongo',
-    'mssqlserver',  
-    'rubyonrails',
-    'node',
-    'styled',
-    'tf',
-    'haskell',
-    'next',
     'heroku',
     'netlify',
-    'gatsby',
+    'opencv',
+    'c',
+    'intel',
+    'express',
+    'csharp',
+    'prolog',
+    'keras',
+    'excel',
+    'matlab',
+    'rubyonrails',
+    'styled',
+    'go',
+    'haskell',
+    'next',
+    'angular',
+    'net',
 ]
 
 const ScrollingTech = () => {
-
+    
 
     const data = useStaticQuery(graphql`
         query {
@@ -58,26 +63,25 @@ const ScrollingTech = () => {
         }
     `)
 
+    const filterted = data.allImageSharp.edges.filter(edge => list.includes(edge.node.fluid.originalName.split('.')[0]))
+    const sorted = filterted.sort((edgeA, edgeB) => list.indexOf(edgeA.node.fluid.originalName.split('.')[0]) - list.indexOf(edgeB.node.fluid.originalName.split('.')[0]))
+
     return (
         <Panel>
         <SlideCont>
 
-        {data.allImageSharp.edges.map(edge => {
-            if(list.includes(edge.node.fluid.originalName.split('.')[0]))
-                return(
-                    <ImageCont key={edge.node.id}>
-                        <Img 
-                            loading='eager'
-                            fluid={edge.node.fluid} 
-                            imgStyle={{ objectFit: 'contain', objectPosition: 'middle' }} 
-                            style={{height: '100px', verticalAlign: 'middle' }}
-                        />
-                    </ImageCont>
-                ) 
-            else
-                return null
-            }
-        )}
+        {sorted.map(edge => {
+            return(
+                <ImageCont key={edge.node.id}>
+                    <Img 
+                        loading='eager'
+                        fluid={edge.node.fluid} 
+                        imgStyle={{ objectFit: 'contain', objectPosition: 'middle' }} 
+                        style={{height: '100px', verticalAlign: 'middle' }}
+                    />
+                </ImageCont>
+            ) 
+        })}
 
         </SlideCont>
         </Panel>
@@ -102,7 +106,7 @@ const slide = keyframes`
     }
 
     to {
-        transform: translate3d(-${list.length*180}px,0,0);
+        transform: translate3d(-${list.length*200}px,0,0);
     }
 `;
 

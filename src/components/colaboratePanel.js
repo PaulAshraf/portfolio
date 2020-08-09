@@ -12,7 +12,7 @@ const colaboratePanel = () => {
                 <Row>
                     <Col lg>
                         <Row><Title>Let's Colaborate!</Title></Row>
-                        <Row><Sub>Hit me up on Github/LinkdIn or email me at paulashraf14@gmail.com, and let's create something great.</Sub></Row>
+                        <Row><Sub>Hit me up on Github/Linkedin or email me at paulashraf14@gmail.com, and let's create something great.</Sub></Row>
                     </Col>
                 <Col lg='4'>
                 <HomeButton data={{

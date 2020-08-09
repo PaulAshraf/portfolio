@@ -22,7 +22,7 @@ const ProjCard = ({children, data}) => {
                 <ButtonCont><ProjButton data={{
                     link: false,
                     card: true,
-                    text: 'Github Repo',
+                    text: 'Github',
                     type: 'Github',
                     href: data.github
                   }} /></ButtonCont>
@@ -31,7 +31,7 @@ const ProjCard = ({children, data}) => {
                   <ButtonCont><ProjButton data={{
                     link: false,
                     card: true,
-                    text: 'Live Website',
+                    text: 'Website',
                     type: 'website',
                     href: data.live
                   }} /></ButtonCont>
@@ -49,7 +49,7 @@ const ProjCard = ({children, data}) => {
                 <ButtonCont><ProjButton data={{
                   link: false,
                   card: true,
-                  text: 'Youtube Link',
+                  text: 'Youtube',
                   type: 'youtube',
                   href: data.youtube
                 }} /></ButtonCont>
@@ -70,7 +70,7 @@ const Wrapper = styled.div`
     max-width: 70%
   };
 
-  max-width: 95%
+  max-width: 97%
 
   
 `

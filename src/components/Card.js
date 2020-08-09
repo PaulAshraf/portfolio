@@ -18,9 +18,9 @@ const Card = ({children, data}) => {
                     <Sub>{data.date + ' '}<BsDot />{' ' + (data.location||'Cairo, Egypt')}</Sub>
                     <Sub>{data.tech.map((element, i) => {
                         if(i !== data.tech.length - 1){
-                            return(<>{element  + ' '}<BsDot /></>)}
+                            return(<span key={i}>{element  + ' '}<BsDot /></span>)}
                         else{
-                            return(element)}
+                            return(<span key={i}>{element}</span>)}
                     })}</Sub>
                 </Row>
                 </Col>
@@ -28,7 +28,7 @@ const Card = ({children, data}) => {
             <Row  >
                 <Col>
                 <List>
-                    {data.list.map((li) => {return(<li>{li}</li>)})}
+                    {data.list.map((li, i) => {return(<li key={i}>{li}</li>)})}
                 </List>
                 </Col>
             </Row>

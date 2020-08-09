@@ -9,30 +9,14 @@ const Header = ({selected}) => {
     <header >
       <Navbar expand="lg" >
         <Navbar.Brand>
-            {selected === 0?
-            <Link to='/' className='nav-bar selected'>Paul Ashraf</Link>
-            :
-            <Link to='/' className='nav-bar'>Paul Ashraf</Link>
-            }
+            <Link to='/' className={selected === 0?'nav-bar selected':'nav-bar'}>Paul Ashraf</Link>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav" >
           <Nav>
-            {selected === 2?
-            <Nav.Link><Link to='/projects' className='nav-bar selected'>Projects</Link></Nav.Link>
-            :
-            <Nav.Link><Link to='/projects' className='nav-bar'>Projects</Link></Nav.Link>
-            }
-            {selected === 1?
-            <Nav.Link><Link to='/experience' className='nav-bar selected'>Experience</Link></Nav.Link>
-            :
-            <Nav.Link><Link to='/experience' className='nav-bar'>Experience</Link></Nav.Link>
-            }
-            {selected === 3?
-            <Nav.Link><Link to='/education' className='nav-bar selected'>Education</Link></Nav.Link>
-            :
-            <Nav.Link><Link to='/education' className='nav-bar'>Education</Link></Nav.Link>
-            }
+            <Nav.Item><Link to='/projects' className={selected === 2?'nav-bar selected':'nav-bar'}>Projects</Link></Nav.Item>
+            <Nav.Item><Link to='/experience' className={selected === 1?'nav-bar selected':'nav-bar'}>Experience</Link></Nav.Item>
+            <Nav.Item><Link to='/education' className={selected === 3?'nav-bar selected':'nav-bar'}>Education</Link></Nav.Item>
           </Nav>
         </Navbar.Collapse>
       </Navbar>

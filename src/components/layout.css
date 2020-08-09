@@ -41,12 +41,14 @@ footer {
 
   text-align: center;
   font-family: 'Raleway';
+
+  margin: 0.5em;
 }
 
 .selected{
   position: relative;
-  display: inline-block;
-  z-index:0;
+  /* display: inline-block; */
+  /* z-index:0; */
 }
 .selected:before {
   content: '';
