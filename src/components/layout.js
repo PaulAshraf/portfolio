@@ -13,13 +13,17 @@ import Header from "./header"
 import '../../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import "./layout.css"
 
+import { AiFillHeart } from 'react-icons/ai'
+import { BsDot } from 'react-icons/bs'
+
 const Layout = ({ children, selected }) => {
   return (
     <>
       <Header selected={selected} />
       <main>{children}</main>
-      <footer style={{marginTop: '3em'}}>
-        2020 © Paul Ashraf
+      <footer style={{marginTop: '3em', marginBottom: '1em'}}>
+        <div>Made with <AiFillHeart /> using Gatsby <BsDot /> <a href='https://github.com/PaulAshraf/portfolio' target="_blank" rel="noreferrer">Source Code</a></div>
+        <div>{new Date().getFullYear()} © Paul Ashraf</div>
       </footer>
     </>
   )

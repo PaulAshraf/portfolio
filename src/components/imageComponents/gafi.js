@@ -18,7 +18,7 @@ const Gafi = () => {
     query {
       placeholderImage: file(relativePath: { eq: "gafi.png" }) {
         childImageSharp {
-          fluid(maxWidth: 300) {
+          fluid {
             ...GatsbyImageSharpFluid
           }
         }
