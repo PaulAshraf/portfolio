@@ -3,7 +3,7 @@ import { Button, Row } from 'react-bootstrap'
 import { motion } from 'framer-motion'
 import styled from 'styled-components'
 
-import { AiOutlineMobile, AiFillGithub, AiFillFilePdf, AiFillYoutube } from 'react-icons/ai'
+import { AiOutlineMobile, AiFillGithub, AiFillFilePdf, AiFillYoutube, AiFillChrome } from 'react-icons/ai'
 import { BsThreeDots } from 'react-icons/bs'
 import { FaGamepad, FaMicrochip } from 'react-icons/fa'
 import { FiGlobe, FiMonitor, FiDatabase, FiExternalLink } from 'react-icons/fi'
@@ -47,6 +47,8 @@ const resolveIcon = (type) => {
             return <FiExternalLink size={size} />
         case 'youtube':
             return <AiFillYoutube size={size} />
+        case 'chrome':
+            return <AiFillChrome size={size} />
 
         default:
             return <></>

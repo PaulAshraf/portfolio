@@ -27,6 +27,15 @@ const ProjCard = ({children, data}) => {
                     href: data.github
                   }} /></ButtonCont>
                 :<></>}
+                 {data.chrome?
+                <ButtonCont><ProjButton data={{
+                    link: false,
+                    card: true,
+                    text: 'Extention',
+                    type: 'chrome',
+                    href: data.chrome
+                  }} /></ButtonCont>
+                :<></>}
                 {data.live?
                   <ButtonCont><ProjButton data={{
                     link: false,

@@ -16,6 +16,7 @@ import Grid from '../components/imageComponents/grid'
 import Eeg from '../components/imageComponents/eeg'
 import Lines from '../components/imageComponents/lines'
 import Fake from '../components/imageComponents/fake'
+import Medium from "../components/imageComponents/medium"
 
 const Projects = () => {
 
@@ -32,6 +33,17 @@ const Projects = () => {
           Backend developement experience using Node, with slight experience in Python (as a Backend server), Ruby on Rails and Go.
     </SubHeading>
       </Panel>
+
+      <ProjCard data={{
+        name: 'Medium Unblocker',
+        desc: 'A small Google Chrome extention that unblocks "Medium" articles.',
+        date: '2020',
+        type: 'Personal',
+        github: 'https://github.com/PaulAshraf/medium-unblocker',
+        chrome: 'https://chrome.google.com/webstore/detail/medium-unblocker/dbannipnecjbkocecnoedgfddobboell?hl=en-GB&authuser=0',
+      }}>
+        <Medium />
+      </ProjCard>
 
       <ProjCard data={{
         name: 'Fake Scientific Journal',
