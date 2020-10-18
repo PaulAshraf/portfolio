@@ -7,10 +7,45 @@ import Card from '../components/Card'
 import Porto from '../components/imageComponents/porto'
 import Guc from '../components/imageComponents/guc'
 import Robone from '../components/imageComponents/robone'
+import Coursera from '../components/imageComponents/coursera'
+import ITWorx from '../components/imageComponents/itworx'
 
 const Experience = () => (
   <Layout selected={1} >
     <SEO title="Experience" />
+
+    <Card data={{
+      title: 'NimbleBot',
+      sub: 'Web Developement Instructor',
+      date: 'August 2020 – present',
+      delay: 0,
+      tech: [],
+      list: [
+        'Authoring Web development Courses on the Coursera Rhyme Platform.',
+        'Over 1200 registered learners.'
+      ],
+    }}>
+      <Coursera />
+    </Card>
+
+    <Card data={{
+      title: 'ITWorx',
+      sub: 'Full Stack Engineering Intern',
+      date: 'September – October 2020',
+      delay: 0,
+      tech: [
+        'React',
+        'Node',
+        'MySQL',
+        'nginx'
+      ],
+      list: [
+        'Built a large-scale internal tool for placing and managing talent inside ITWorx.',
+        ' Node, React and MySQL were used to build the tool.',
+      ],
+    }}>
+      <ITWorx />
+    </Card>
 
     <Card data={{
       title: 'University of Porto',
