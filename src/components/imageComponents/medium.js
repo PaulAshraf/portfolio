@@ -14,7 +14,7 @@ import Img from "gatsby-image"
  */
 
 const Medium = () => {
-    const data = useStaticQuery(graphql`
+  const data = useStaticQuery(graphql`
     query {
       placeholderImage: file(relativePath: { eq: "medium.png" }) {
         childImageSharp {
@@ -26,8 +26,7 @@ const Medium = () => {
     }
   `)
 
-    return <Img fluid={data.placeholderImage.childImageSharp.fluid} />
+  return <Img fluid={data.placeholderImage.childImageSharp.fluid} />
 }
-
 
 export default Medium

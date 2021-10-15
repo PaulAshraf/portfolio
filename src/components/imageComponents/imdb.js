@@ -29,5 +29,4 @@ const Imdb = () => {
   return <Img fluid={data.placeholderImage.childImageSharp.fluid} />
 }
 
-
 export default Imdb

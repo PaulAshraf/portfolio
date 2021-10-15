@@ -22,7 +22,7 @@ function SEO({ description, lang, meta, title }) {
             url
           }
         }
-        imageSharp(fluid: {originalName: {eq: "logo.png"}}) {
+        imageSharp(fluid: { originalName: { eq: "logo.png" } }) {
           fluid {
             src
           }
@@ -63,7 +63,7 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           property: `og:image`,
-          itemprop:"image",
+          itemprop: "image",
           content: site.siteMetadata.url + imageSharp.fluid.src,
         },
         {

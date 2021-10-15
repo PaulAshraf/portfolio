@@ -29,5 +29,4 @@ const Eeg = () => {
   return <Img fluid={data.placeholderImage.childImageSharp.fluid} />
 }
 
-
 export default Eeg

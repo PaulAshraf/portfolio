@@ -29,5 +29,4 @@ const Nrc = () => {
   return <Img fluid={data.placeholderImage.childImageSharp.fluid} />
 }
 
-
 export default Nrc

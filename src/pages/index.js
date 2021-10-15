@@ -1,71 +1,77 @@
 import React from "react"
-import styled from 'styled-components'
+import styled from "styled-components"
 
-import { Container, Row, Col } from 'react-bootstrap'
-
+import { Container, Row, Col } from "react-bootstrap"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import DrawTitle from '../components/DrawTitle'
-import Paul from '../components/imageComponents/paul'
-import cv from '../files/PaulAshrafCV.pdf'
-import HomeButton from '../components/HomeButton'
-import ScrollingTech  from '../components/ScrollingTech'
-import ColaboratePanel  from '../components/colaboratePanel'
-
+import DrawTitle from "../components/DrawTitle"
+import Paul from "../components/imageComponents/paul"
+import cv from "../files/PaulAshrafCV.pdf"
+import HomeButton from "../components/HomeButton"
+import ScrollingTech from "../components/ScrollingTech"
+import ColaboratePanel from "../components/colaboratePanel"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
 
     <Margin>
-
       <Container>
         <Row>
-        <Col lg>
-          <Row><DrawTitle /></Row>
+          <Col lg>
+            <Row>
+              <DrawTitle />
+            </Row>
 
-          <Row>
-              <SubTitle>A Software Developer from the GUC with experience in
-              <SubTitleBold> Full-Stack Web Developement</SubTitleBold>,{' '}
-                <SubTitleBold>Data Engineering</SubTitleBold>{' '}and{' '}
-                <SubTitleBold>Embedded Systems</SubTitleBold>. Check out my projects or download my CV.</SubTitle>
-          </Row>
+            <Row>
+              <SubTitle>
+                A Software Developer from the GUC with experience in
+                <SubTitleBold>
+                  {" "}
+                  Full-Stack Web Developement
+                </SubTitleBold> and{" "}
+                <SubTitleBold>Data Engineering</SubTitleBold> . Check out my
+                projects or download my CV.
+              </SubTitle>
+            </Row>
 
-        <Row>
-          <Col>
-          <HomeButton data={{
-              delay: 0.1,
-              to: '/projects',
-              text: 'Projects',
-            }}/>
+            <Row>
+              <Col>
+                <HomeButton
+                  data={{
+                    delay: 0.1,
+                    to: "/projects",
+                    text: "Projects",
+                  }}
+                />
+              </Col>
+              <Col>
+                <HomeButton
+                  data={{
+                    delay: 0.2,
+                    to: { cv },
+                    text: "CV",
+                  }}
+                />
+              </Col>
+            </Row>
           </Col>
-          <Col>
-          <HomeButton data={{
-              delay: 0.2,
-              to: {cv},
-              text: 'CV',
-            }}/>
+
+          <Col lg="auto">
+            <Row className="justify-content-center">
+              <ImageCont>
+                <Paul />
+              </ImageCont>
+            </Row>
           </Col>
         </Row>
-        
-        </Col>
-        
-        <Col lg='auto'>
-          <Row className='justify-content-center'>
-          <ImageCont><Paul /></ImageCont>
-          </Row>
-        </Col>
-        </Row>
-        
-        </Container>
+      </Container>
+    </Margin>
 
-        </Margin>
+    <ScrollingTech />
 
-        <ScrollingTech />
-
-        <ColaboratePanel />
-
+    <ColaboratePanel />
   </Layout>
 )
 
@@ -82,17 +88,15 @@ const Margin = styled.div`
 `
 
 const SubTitle = styled.span`
-
-  @media (max-width: 992px){
+  @media (max-width: 992px) {
     font-size: 1em;
-
-  };
+  }
 
   font-size: 1.1em;
   margin-top: 0.4em;
 
   text-align: center;
-  font-family: 'Raleway';
+  font-family: "Raleway";
 
   margin-left: 0.1em;
   margin-right: 0.1em;
@@ -102,8 +106,6 @@ const SubTitleBold = styled(SubTitle)`
   font-weight: bold;
 
   margin: 0;
-
 `
-
 
 export default IndexPage

@@ -29,5 +29,4 @@ const Game = () => {
   return <Img fluid={data.placeholderImage.childImageSharp.fluid} />
 }
 
-
 export default Game

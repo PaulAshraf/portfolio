@@ -29,5 +29,4 @@ const Grid = () => {
   return <Img fluid={data.placeholderImage.childImageSharp.fluid} />
 }
 
-
 export default Grid

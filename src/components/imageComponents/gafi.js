@@ -29,5 +29,4 @@ const Gafi = () => {
   return <Img fluid={data.placeholderImage.childImageSharp.fluid} />
 }
 
-
 export default Gafi

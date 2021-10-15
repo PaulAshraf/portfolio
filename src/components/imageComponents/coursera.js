@@ -29,5 +29,4 @@ const Cousera = () => {
   return <Img fluid={data.placeholderImage.childImageSharp.fluid} />
 }
 
-
 export default Cousera

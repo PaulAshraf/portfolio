@@ -29,5 +29,4 @@ const ITWorx = () => {
   return <Img fluid={data.placeholderImage.childImageSharp.fluid} />
 }
 
-
 export default ITWorx

@@ -29,5 +29,4 @@ const Superhero = () => {
   return <Img fluid={data.placeholderImage.childImageSharp.fluid} />
 }
 
-
 export default Superhero
